@@ -1,0 +1,15 @@
+selenium>=4.1.0
+requests>=2.27.1
+beautifulsoup4>=4.10.0
+numpy>=1.21.0
+torch>=1.11.0
+torchvision>=0.12.0
+torchaudio>=0.11.0
+transformers>1.18.0
+lxml>=4.7.1
+cssselect>=1.1.0
+appdirs>=1.4.4
+scispacy>=0.4.0
+spacy==3.0.7
+rst2pdf>=0.98
+https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.4.0/en_core_sci_sm-0.4.0.tar.gz
