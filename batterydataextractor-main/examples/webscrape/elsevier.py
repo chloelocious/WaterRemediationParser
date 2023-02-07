@@ -28,8 +28,8 @@ def main(api_key, query, year, file_location):
 
 
 if __name__ == "__main__":
-    api_key = ""
-    query = "battery materials"
-    location = r"F:\work\to_date_papers\els\new\\"
+    api_key = "3292d266bdafbcf2bdc6d005703be009"
+    query = "water remediation"
+    location = r"/Users/chloelocious/Documents/webscrape/to_date_papers/els"
     year = 2021
     main(api_key=api_key, query=query, year=year, file_location=location)
