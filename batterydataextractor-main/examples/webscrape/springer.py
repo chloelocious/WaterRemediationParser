@@ -45,9 +45,9 @@ def run_tdm_scraper(api_key, query, data_from, date_to, file_location, start=0):
 
 
 if __name__ == "__main__":
-    api_key = ""
-    query = "battery materials"
-    location = r"F:\work\to_date_papers\spr\\"
+    api_key = "f7ca9e371cde5efef63b294702706bdf"
+    query = "water remediation"
+    location = r"/Users/chloelocious/Documents/webscrape/to_date_papers/spr"
     # Use different scraper according to the API key.
     scraper = 'TDM'
     if scraper == "Meta":
