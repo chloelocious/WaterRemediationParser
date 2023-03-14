@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 batterydataextractor.reader.springer
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Springer XML reader
 """

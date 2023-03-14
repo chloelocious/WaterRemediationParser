@@ -46,12 +46,13 @@ def run_tdm_scraper(api_key, query, data_from, date_to, file_location, start=0):
 
 if __name__ == "__main__":
     api_key = "f7ca9e371cde5efef63b294702706bdf"
+    #api_key=""
     query = "water remediation"
-    location = r"/Users/chloelocious/Documents/webscrape/to_date_papers/spr"
+    location = r"/home/ssarrouf/Documents/webscrape/to_date_papers/spr/"
     # Use different scraper according to the API key.
-    scraper = 'TDM'
+    scraper = 'Meta'
     if scraper == "Meta":
-        year = 2021
+        year = 2011
         for start in range(0, 1000, 100):
             run_meta_scraper(api_key=api_key, query=query, year=year, file_location=location, start=start)
     if scraper == "TDM":

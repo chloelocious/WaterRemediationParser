@@ -19,7 +19,9 @@ def main(url, query, page, file_location):
     :return:
     """
     scraper = RSCWebScraper(url=url)
+   
     dois = scraper.get_doi(query=query, page=page)
+        
     for doi in dois:
         try:
             scraper.download_doi(doi, file_location)
@@ -31,10 +33,10 @@ def main(url, query, page, file_location):
 
 if __name__ == "__main__":
     # Download papers within a certain date range
-    url = "https://pubs.rsc.org/en/results/all?Category=All&AllText=battery%20materials&IncludeReference=false&Select" \
+    url = "https://pubs.rsc.org/en/results/all?Category=All&AllText=water%20remediation&IncludeReference=false&Select" \
           "Journal=false&DateRange=true&SelectDate=true&DateToYear={}&DateFromYear={}&DateFromMonth={}&DateTo" \
           "Month={}&PriceCode=False&OpenAccess=false".format("2022", "2021", "06", "01")
-    query = "battery materials"
-    location = r"F:\work\to_date_papers\rsc\\"
+    query = "water remediation"
+    location = r"/home/ssarrouf/Documents/webscrape/to_date_papers/rsc/"
     for page in range(1, 120):
         main(url, query, page, location)

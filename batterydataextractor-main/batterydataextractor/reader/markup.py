@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 batterydataextractor.reader.markup
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 XML and HTML readers based on lxml.
 """

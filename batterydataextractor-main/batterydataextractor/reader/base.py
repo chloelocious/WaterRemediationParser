@@ -25,6 +25,7 @@ class BaseReader(six.with_metaclass(ABCMeta)):
     @abstractmethod
     def parse(self, fstring):
         """Parse the input and return a Document. Raises ReaderError if the parse fails."""
+        
         pass
 
     def read(self, f):
@@ -33,4 +34,5 @@ class BaseReader(six.with_metaclass(ABCMeta)):
 
     def readstring(self, fstring):
         """Read a file string and return a Document."""
+       
         return self.parse(fstring)
