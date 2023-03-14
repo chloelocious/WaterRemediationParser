@@ -38,6 +38,7 @@ class RSCWebScraper(BaseWebScraper):
         :param page: the number of page
         :return: a list of dois of the relevant query text and page.
         """
+        
         if self.driver is None:
             driver = webdriver.Chrome()
         else:
@@ -58,7 +59,7 @@ class RSCWebScraper(BaseWebScraper):
         driver.execute_script(page_string)
         next_button.click()
         sleep(1)
-        _ = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, '.capsule.capsule--article')))
+        doi_lists = WebDriverWait(driver,10).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.capsule.capsule--article')))
         doi_lists = driver.find_elements(By.PARTIAL_LINK_TEXT, 'https://doi.org')
         dois = [doi.text for doi in doi_lists]
         return dois
