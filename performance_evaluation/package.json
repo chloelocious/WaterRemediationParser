@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "precision-recall": "^1.0.2"
+  }
+}
