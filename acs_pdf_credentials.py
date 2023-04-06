@@ -81,25 +81,26 @@ for number in numbers:
         f.write(pdf_request.content)
 """
 
-# # Define the directory where the PDF files will be saved
 # pdf_dir = '/home/ssarrouf/Documents/webscrape/to_date_papers/acs'
-
+import os
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from undetected_chromedriver import Chrome, ChromeOptions
 import undetected_chromedriver as uc
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-import time
+uc.TARGET_VERSION = 110
 
-# pdf folder to save acs files
 download_dir = '/home/ssarrouf/Documents/webscrape/to_date_papers/acs'
+actual_download_dir = '/home/ssarrouf/Documents/webscrape/to_date_papers/new_acs_2'
+second_dir = '/home/ssarrouf/Documents/train_data'
+third_dir = '/home/ssarrouf/Documents/test_data'
 
 options = ChromeOptions()
-options.add_argument("--headless")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--disable-gpu")
-options.add_argument("--disable-extensions")
 options.add_argument("--disable-setuid-sandbox")
 options.add_argument("--disable-audio-output")
 options.add_argument("--disable-background-networking")
@@ -115,26 +116,45 @@ options.add_argument("--no-first-run")
 options.add_argument("--no-default-browser-check")
 options.add_argument("--safebrowsing-disable-auto-update")
 options.add_argument("--ignore-certificate-errors")
-options.add_experimental_option("prefs", {"plugins.always_open_pdf_externally": True})
+prefs = {"plugins.always_open_pdf_externally": True, "download.default_directory": actual_download_dir}
+options.add_experimental_option("prefs", prefs)
 options.add_argument('--disable-extensions')
 options.add_argument('--disable-infobars')
-options.add_experimental_option('useAutomationExtension', False)
+
 driver = Chrome(options=options)
 
-# read the lines from the text file
-with open('input_file.txt', 'r') as f:
+with open('/home/ssarrouf/Documents/GitHub/WaterRemediationParser/new_dois_missed.txt', 'r') as f:
     lines = f.readlines()
 
 for line in lines:
     url = f"https://pubs.acs.org/doi/{line}"
-    
+    filename = line.strip().split('/')[-1] + ".pdf"
+    file_path = os.path.join(download_dir, filename)
+    file_path_2 = os.path.join(second_dir, filename)
+    file_path_3 = os.path.join(third_dir, filename)
+
+    if os.path.isfile(file_path) or os.path.isfile(file_path_2) or os.path.isfile(file_path_3):
+        print(f"Skipping {line.strip()} since {filename} already exists in {download_dir}")
+        continue
+
     driver.get(url)
-    time.sleep(5)
+    time.sleep(10)
 
     try:
-        pdf_button = driver.find_element(By.CSS_SELECTOR, 'div.article_header-links.pull-left > a.button_primary.pdf-button')
+        # switch to the reCAPTCHA iframe
+        #frame = WebDriverWait(driver, 10).until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe[starts-with(@name, 'a-') and starts-with(@src, 'https://www.google.com/recaptcha')]")))
+
+        # click the reCAPTCHA checkbox
+       #checkbox = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "div.recaptcha-checkbox-checkmark")))
+        #checkbox.click()
+        #pdf_button_1 = driver.find_element(By.CSS_SELECTOR, "a.seamless-access-btn.state-inst-did-not-provide-access")
+        #pdf_button_1.click()
+
+        pdf_button = driver.find_element(By.CSS_SELECTOR, "a.button_primary.pdf-button")
+        print(pdf_button)
         pdf_button.click()
-        time.sleep(5)
+
+        time.sleep(10)
 
         # PDF viewer window
         driver.switch_to.window(driver.window_handles[-1])
@@ -142,10 +162,16 @@ for line in lines:
         # download the PDF
         download_button = driver.find_element(By.ID, 'download')
         download_button.click()
+
         time.sleep(10)
 
         driver.close()
         driver.switch_to.window(driver.window_handles[0])
     except:
         print(f"No PDF button found for {line}")
+
 driver.quit()
+
+
+
+
