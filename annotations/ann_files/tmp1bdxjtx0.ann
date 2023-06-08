@@ -1,0 +1,288 @@
+T1	Treated_contaminant 1180 1206	contaminated with chromium
+T2	Treated_contaminant 1217 1224	Cr(III)
+T3	Treated_contaminant 1228 1234	Cr(VI)
+R1	Contaminant_correlation Arg1:T1 Arg2:T2	
+R2	Contaminant_correlation Arg1:T1 Arg2:T3	
+T4	Treated_contaminant 1250 1258	chromium
+T5	Concentration 1293 1303	1000 mg/kg
+R3	Contaminant_concentration Arg1:T4 Arg2:T5	
+T6	Treated_contaminant 1318 1324	Ni(II)
+T7	Treated_contaminant 1329 1335	Cd(II)
+T8	Concentration 1367 1370	500
+T9	Concentration 1375 1384	250 mg/kg
+R4	Contaminant_concentration Arg1:T6 Arg2:T8	
+R5	Contaminant_concentration Arg1:T7 Arg2:T9	
+T10	Removal_efficiency 3516 3583	overall contaminant removal efficiency was very low (less than 20%)
+T11	Treated_contaminant 3752 3764	heavy metals
+T12	Treated_contaminant 3773 3781	chromium
+T13	Treated_contaminant 3783 3789	nickel
+T14	Treated_contaminant 3794 3801	cadmium
+R6	Contaminant_correlation Arg1:T11 Arg2:T12	
+R7	Contaminant_correlation Arg1:T11 Arg2:T13	
+R8	Contaminant_correlation Arg1:T11 Arg2:T14	
+T15	Anode 4450 4505	generate hydrogen ions (H+) and oxygen gas at the anode
+T16	Cathode 4510 4566	hydroxyl ions (OH\u2212) and hydrogen gas at the cathode
+T17	Treated_contaminant 6315 6355	clayey soils contaminated with chromium,
+T18	Treated_contaminant 6390 6402	heavy metals
+T19	Treated_contaminant 6414 6420	nickel
+T20	Treated_contaminant 6425 6432	cadmium
+R9	Contaminant_correlation Arg1:T17 Arg2:T18	
+R10	Contaminant_correlation Arg1:T18 Arg2:T19	
+R11	Contaminant_correlation Arg1:T18 Arg2:T20	
+T21	Treated_contaminant 7087 7095	chromium
+T22	Treated_contaminant 7097 7103	nickel
+T23	Treated_contaminant 7108 7115	cadmium
+T24	Treated_contaminant 8389 8396	Cr(III)
+T25	Treated_contaminant 8400 8406	Cr(VI)
+T26	Treated_contaminant 8413 8419	nickel
+T27	Treated_contaminant 8424 8431	cadmium
+T28	Treated_contaminant 8365 8373	chromium
+R12	Contaminant_correlation Arg1:T28 Arg2:T24	
+R13	Contaminant_correlation Arg1:T28 Arg2:T25	
+T29	Treated_contaminant 9184 9192	chromium
+T30	Concentration 9198 9225	concentration of 1000 mg/kg
+R14	Contaminant_concentration Arg1:T29 Arg2:T30	
+T31	Treated_contaminant 9236 9243	Cr(III)
+R15	Contaminant_correlation Arg1:T29 Arg2:T31	
+T32	Treated_contaminant 9247 9253	Cr(VI)
+R16	Contaminant_correlation Arg1:T29 Arg2:T32	
+T33	Treated_contaminant 9255 9261	Nickel
+T34	Treated_contaminant 9265 9271	Ni(II)
+R17	Contaminant_correlation Arg1:T33 Arg2:T34	
+T35	Treated_contaminant 9276 9283	cadmium
+T36	Treated_contaminant 9287 9293	Cd(II)
+R18	Contaminant_correlation Arg1:T35 Arg2:T36	
+T37	Concentration 9316 9319	500
+R19	Contaminant_concentration Arg1:T33 Arg2:T37	
+R20	Contaminant_concentration Arg1:T34 Arg2:T37	
+T38	Concentration 9324 9333	250 mg/kg
+R21	Contaminant_concentration Arg1:T35 Arg2:T38	
+R22	Contaminant_concentration Arg1:T36 Arg2:T38	
+T40	Electrode_surface_area 10650 10662	(anode 4 cm)
+T41	Electrode_surface_area 10668 10681	(4\u20138 cm)
+T42	Electrode_surface_area 10687 10701	(8\u201312 cm)
+T43	Electrode_surface_area 10707 10724	(12\u201315.5 cm)
+T44	Treated_contaminant 12915 12934	consolidated oxides
+T45	Treated_contaminant 12936 12951	co-precipitates
+T46	Treated_contaminant 12957 12980	strongly held complexes
+T47	Treated_contaminant 12987 13001	metal sulfides
+R23	Contaminant_correlation Arg1:T46 Arg2:T47	
+T48	Treated_contaminant 13200 13208	chromium
+T49	Treated_contaminant 13210 13216	nickel
+T50	Treated_contaminant 13222 13229	cadmium
+T51	pH 12346 12354	pH to 5)
+T52	Treated_contaminant 12232 12242	carbonates
+T53	Treated_contaminant 12247 12279	easily soluble oxides/hydroxides
+R24	Contaminant_correlation Arg1:T52 Arg2:T53	
+R25	Contaminant_pH Arg1:T53 Arg2:T51	
+T54	Treated_contaminant 13399 13406	Cr(III)
+T55	pH 13411 13415	3.83
+R26	Contaminant_pH Arg1:T54 Arg2:T55	
+T56	Treated_contaminant 13425 13431	Cr(VI)
+T57	pH 13436 13440	5.36
+R27	Contaminant_pH Arg1:T56 Arg2:T57	
+T58	Treated_contaminant 13476 13483	Cr(III)
+T59	pH 13488 13492	6.74
+R28	Contaminant_pH Arg1:T58 Arg2:T59	
+T60	Treated_contaminant 13502 13508	Cr(VI)
+T61	pH 13513 13517	7.36
+R29	Contaminant_pH Arg1:T60 Arg2:T61	
+T62	Treated_contaminant 14502 14508	Cr(VI)
+T63	pH 14549 14559	pH of 5.36
+R30	Contaminant_pH Arg1:T62 Arg2:T63	
+T64	Treated_contaminant 14603 14611	chromium
+T65	Treated_contaminant 14627 14634	Cr(III)
+R31	Contaminant_correlation Arg1:T64 Arg2:T65	
+T66	Treated_contaminant 14728 14735	Cr(III)
+R32	Contaminant_correlation Arg1:T64 Arg2:T66	
+T67	pH 14800 14810	pH of 6.74
+T68	Treated_contaminant 14818 14825	Cr(III)
+T69	Treated_contaminant 14904 14912	chromium
+T70	Treated_contaminant 14928 14934	Cr(VI)
+R33	Contaminant_correlation Arg1:T69 Arg2:T70	
+T71	Treated_contaminant 15329 15335	Cr(VI)
+T72	Treated_contaminant 15339 15346	Cr(III)
+T73	Treated_contaminant 15352 15359	Cr(III)
+T74	Treated_contaminant 15488 15494	nickel
+T75	Treated_contaminant 15499 15506	cadmium
+T76	Treated_contaminant 15605 15612	Cr(III)
+T77	Treated_contaminant 15835 15841	nickel
+T78	Treated_contaminant 15846 15853	cadmium
+T79	Treated_contaminant 15910 15912	Ni
+T80	Treated_contaminant 15917 15919	Cd
+R34	Contaminant_correlation Arg1:T77 Arg2:T79	
+R35	Contaminant_correlation Arg1:T78 Arg2:T80	
+T81	Treated_contaminant 15960 15966	Cr(VI)
+T82	Treated_contaminant 16032 16034	Ni
+T83	Treated_contaminant 16039 16041	Cd
+T84	Treated_contaminant 16090 16092	Ni
+T85	Treated_contaminant 16097 16099	Cd
+T86	Treated_contaminant 16186 16188	Ni
+T87	Treated_contaminant 16193 16195	Cd
+T88	Treated_contaminant 16215 16221	Cr(VI)
+T89	Treated_contaminant 16273 16280	Cr(III)
+T90	Treated_contaminant 16313 16315	Ni
+T91	Treated_contaminant 16320 16322	Cd
+T92	Treated_contaminant 16359 16366	Cr(III)
+T93	Treated_contaminant 16515 16517	Ni
+T94	Treated_contaminant 16522 16524	Cd
+T95	Treated_contaminant 16563 16570	Cr(III)
+T96	Treated_contaminant 16574 16581	Cr(VI).
+T97	pH 16769 16789	pH of 6.74\u20137.36
+T98	Treated_contaminant 16797 16799	Ni
+T99	Treated_contaminant 16804 16806	Cd
+T100	Treated_contaminant 16995 17007	heavy metals
+R36	Contaminant_correlation Arg1:T98 Arg2:T100	
+R37	Contaminant_correlation Arg1:T99 Arg2:T100	
+T101	Treated_contaminant 17577 17583	Cr(VI)
+T102	Treated_contaminant 17700 17708	chromium
+T103	pH 17330 17360	low pH of kaolin (less than 5)
+T104	Treated_contaminant 17738 17744	Cr(VI)
+R38	Contaminant_correlation Arg1:T102 Arg2:T101	
+R39	Contaminant_correlation Arg1:T102 Arg2:T104	
+T105	Treated_contaminant 17765 17772	Cr(III)
+T106	Treated_contaminant 17882 17890	chromium
+R40	Contaminant_correlation Arg1:T105 Arg2:T106	
+T107	Treated_contaminant 17913 17915	Ni
+T108	Treated_contaminant 17920 17922	Cd
+T109	Treated_contaminant 18014 18021	Cr(III)
+T110	Treated_contaminant 18580 18587	Cr(III)
+T111	Treated_contaminant 18592 18598	Cr(VI)
+T112	Anode 18772 18806	The H+ ions generated at the anode
+T113	Cathode 18827 18845	cathode (negative)
+T114	Cathode 18850 18888	OH\u2212 ions generated at the cathode
+T115	Anode 18909 18925	anode (positive)
+T116	pH 18939 19007	pH of the soil to decrease to a value between 2 and 3 near the anode
+T117	pH 19015 19058	increase between 11 and 12 near the cathode
+T118	Treated_contaminant 19101 19108	Cr(III)
+T119	Treated_contaminant 19113 19119	Cr(VI)
+T120	pH 19170 19214	pH values ranging from 5 to 6 near the anode
+T121	pH 19224 19245	11 to 12 near cathode
+T122	Treated_contaminant 19873 19894	metallic contaminants
+T123	Treated_contaminant 19950 19971	cationic contaminants
+T124	Treated_contaminant 19973 19980	Cr(III)
+T125	Treated_contaminant 19982 19988	Ni(II)
+T126	Treated_contaminant 19993 19999	Cd(II)
+R41	Contaminant_correlation Arg1:T123 Arg2:T124	
+R42	Contaminant_correlation Arg1:T123 Arg2:T125	
+R43	Contaminant_correlation Arg1:T123 Arg2:T126	
+T127	Treated_contaminant 20040 20060	anionic contaminant,
+T128	Treated_contaminant 20061 20067	Cr(VI)
+R44	Contaminant_correlation Arg1:T127 Arg2:T128	
+T129	Treated_contaminant 20117 20124	Cr(III)
+T130	Treated_contaminant 20126 20132	Cr(VI)
+T131	Treated_contaminant 20134 20140	Ni(II)
+T132	Treated_contaminant 20145 20151	Cd(II)
+T133	Treated_contaminant 20450 20458	chromium
+T134	Treated_contaminant 20499 20507	chromium
+T135	Treated_contaminant 20515 20522	Cr(III)
+R45	Contaminant_correlation Arg1:T134 Arg2:T135	
+T136	Treated_contaminant 20529 20537	Chromium
+T137	Treated_contaminant 20660 20667	Cr(III)
+T138	Treated_contaminant 20768 20813	chromium hydroxide complexes and precipitates
+T139	Treated_contaminant 20874 20882	Chromium
+T140	Treated_contaminant 21126 21134	chromium
+T141	Treated_contaminant 21001 21009	chromium
+T142	Treated_contaminant 21284 21341	chromium remained as hydroxide complexes and precipitates
+T143	Treated_contaminant 21392 21400	chromium
+T144	Treated_contaminant 21454 21462	chromium
+T145	Treated_contaminant 21684 21690	Cr(VI)
+R46	Contaminant_correlation Arg1:T144 Arg2:T145	
+T146	Treated_contaminant 21622 21630	chromium
+R47	Contaminant_correlation Arg1:T146 Arg2:T145	
+T147	Treated_contaminant 21836 21843	Cr(III)
+T148	Treated_contaminant 21878 21884	Cr(VI)
+T149	Treated_contaminant 22030 22038	chromium
+T150	Treated_contaminant 22135 22141	Cr(VI)
+T151	Treated_contaminant 22202 22208	Cr(VI)
+T152	Treated_contaminant 22260 22266	Cr(VI)
+T153	Treated_contaminant 22294 22301	Cr(III)
+T154	Treated_contaminant 22381 22389	chromium
+T155	Treated_contaminant 22459 22465	Cr(VI)
+T156	Treated_contaminant 22499 22507	chromium
+T157	Treated_contaminant 22671 22677	Cr(VI)
+T158	Treated_contaminant 22681 22688	Cr(III)
+T159	Treated_contaminant 22789 22795	Cr(VI)
+T160	Treated_contaminant 22809 22816	Cr(III)
+T161	Treated_contaminant 23288 23294	Ni(II)
+T162	Treated_contaminant 23314 23321	Cr(III)
+T163	Treated_contaminant 23420 23422	Ni
+T164	Treated_contaminant 23543 23545	Ni
+T165	Treated_contaminant 23646 23648	Ni
+T166	Treated_contaminant 23776 23778	Ni
+T167	Treated_contaminant 24009 24011	Ni
+T168	Treated_contaminant 24074 24076	Ni
+T169	Treated_contaminant 24202 24204	Ni
+T170	Treated_contaminant 24292 24294	Ni
+T171	Treated_contaminant 24489 24491	Ni
+T172	Treated_contaminant 24516 24518	Ni
+T173	Treated_contaminant 24638 24646	chromium
+T174	Treated_contaminant 24661 24667	Cr(VI)
+T175	Treated_contaminant 24671 24678	Cr(III)
+R48	Contaminant_correlation Arg1:T173 Arg2:T174	
+R49	Contaminant_correlation Arg1:T173 Arg2:T175	
+T176	Treated_contaminant 24687 24689	Ni
+T177	Treated_contaminant 24797 24799	Ni
+T178	Treated_contaminant 24963 24965	Ni
+T179	Treated_contaminant 25147 25149	Cd
+T180	Treated_contaminant 25218 25225	Cr(III)
+T181	Treated_contaminant 25231 25233	Cd
+T182	Treated_contaminant 25293 25295	Ni
+T183	Treated_contaminant 25333 25335	Cd
+T184	Treated_contaminant 25432 25434	Cd
+T185	Treated_contaminant 25505 25507	Cd
+T186	Treated_contaminant 25733 25735	Cd
+T187	Treated_contaminant 25637 25639	Cd
+T188	Treated_contaminant 25689 25691	Ni
+T189	Treated_contaminant 25707 25709	Cd
+T190	Treated_contaminant 25804 25806	Cd
+T191	Treated_contaminant 26108 26110	Cd
+T192	Treated_contaminant 26149 26155	Cr(VI)
+T193	Treated_contaminant 26207 26209	Cd
+T194	Treated_contaminant 26264 26272	chromium
+T195	Treated_contaminant 26583 26590	Cr(III)
+T196	Treated_contaminant 26592 26598	Ni(II)
+T197	Treated_contaminant 26603 26609	Cd(II)
+T198	Treated_contaminant 26734 26740	Cr(VI)
+T199	Treated_contaminant 28266 28272	Cr(VI)
+T200	Treated_contaminant 28320 28328	Cr(III),
+T201	Treated_contaminant 28329 28335	Ni(II)
+T202	Treated_contaminant 28341 28347	Cd(II)
+T203	Treated_contaminant 28888 28895	Cr(III)
+T204	Treated_contaminant 28935 28937	Cr
+T205	Treated_contaminant 28939 28941	Ni
+T206	Treated_contaminant 28947 28949	Cd
+T207	Removal_efficiency 28962 28971	10 to 65%
+T208	Removal_efficiency 29013 29022	0\u20134%
+T209	Treated_contaminant 29065 29073	chromium
+T210	Treated_contaminant 29078 29084	Cr(VI)
+R50	Contaminant_correlation Arg1:T209 Arg2:T210	
+T211	Treated_contaminant 29128 29130	Cr
+T212	Treated_contaminant 29132 29134	Ni
+T213	Treated_contaminant 29139 29141	Cd
+T214	Removal_efficiency 29154 29163	66 to 80%
+R51	Contaminant_removal Arg1:T204 Arg2:T207	
+R52	Contaminant_removal Arg1:T205 Arg2:T207	
+R53	Contaminant_removal Arg1:T206 Arg2:T207	
+R54	Contaminant_removal Arg1:T211 Arg2:T214	
+R55	Contaminant_removal Arg1:T212 Arg2:T214	
+R56	Contaminant_removal Arg1:T213 Arg2:T214	
+R57	Contaminant_removal Arg1:T203 Arg2:T208	
+R58	Contaminant_removal Arg1:T210 Arg2:T214	
+T215	Treated_contaminant 29243 29245	Cr
+T216	Removal_efficiency 29250 29253	38%
+R59	Contaminant_removal Arg1:T215 Arg2:T216	
+T217	Treated_contaminant 29258 29260	Ni
+T218	Treated_contaminant 29265 29267	Cd
+T219	Removal_efficiency 29283 29284	2
+R60	Contaminant_removal Arg1:T217 Arg2:T219	
+T220	Removal_efficiency 29289 29292	10%
+R61	Contaminant_removal Arg1:T218 Arg2:T220	
+T221	Treated_contaminant 29570 29577	Cr(III)
+T222	Treated_contaminant 29579 29585	Ni(II)
+T223	Treated_contaminant 29591 29597	Cd(II)
+T224	Treated_contaminant 29688 29694	Cr(VI)
+T225	Treated_contaminant 29794 29801	Cr(III)
+T226	Treated_contaminant 29803 29809	Ni(II)
+T227	Treated_contaminant 29815 29821	Cd(II)
+T228	Treated_contaminant 29972 29978	Cr(VI)

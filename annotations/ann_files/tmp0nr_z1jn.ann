@@ -1,0 +1,73 @@
+T1	Treated_contaminant 1073 1090	ike granular iron
+T2	Treated_contaminant 1096 1110	atomizing slag
+T3	Treated_contaminant 1120 1135	activated carbo
+T4	Treated_contaminant 1286 1339	Aluminum drinking water treatment residuals (Al-WTRs)
+T5	Treated_contaminant 1779 1781	Cd
+T6	Treated_contaminant 1783 1786	Pb,
+T7	Treated_contaminant 1787 1789	Zn
+T8	Treated_contaminant 1795 1797	As
+T9	Treated_contaminant 1803 1805	Hg
+T10	Treated_contaminant 1814 1816	Sb
+T12	Treated_contaminant 3516 3558	lead from contaminated kaolinite clay soil
+T13	Reactor_batch 6830 7033	batch tests to evaluate the adsorption capacity of the Al-WTRs were conducted by adding pre-determined amount of the sludge (i.e. 5 g) to a 50 mL solution containing of lead ion (e.g. 150\u20132000 mg/L)
+T14	Concentration 7184 7215	lead concentration was 500 mg/L
+T15	pH 7224 7269	pH of solution was designated as pH 2\u201312
+T16	Electrode_configuration 8741 8831	The testing box consists of three major parts, a soil cell and two electrode compartments.
+T17	Anode 8969 8977	Graphite
+T18	Cathode 8982 8997	stainless steel
+T19	Electrode_configuration 9136 9285	the position near to the anode around 6.0 cm away from the anode, in middle of the soil cell, and near to the cathode around 6.0 cm away from cathode
+T20	Treated_contaminant 9288 9329	Contaminated soil with 190 mg/kg Pb(NO3)2
+T21	pH 9566 9572	pH 3.8
+T22	Concentration 9533 9562	0.1 M acetate buffer solution
+T23	Concentration 10093 10133	g soil was mixed with 50 mL of 0.1 M HCl
+T11	Treated_contaminant 1754 1770	heavy metal ions
+R1	Contaminant_correlation Arg1:T1 Arg2:T2	
+R2	Contaminant_correlation Arg1:T1 Arg2:T3	
+R3	Contaminant_correlation Arg1:T11 Arg2:T5	
+R4	Contaminant_correlation Arg1:T11 Arg2:T6	
+R5	Contaminant_correlation Arg1:T11 Arg2:T7	
+R6	Contaminant_correlation Arg1:T11 Arg2:T8	
+R7	Contaminant_correlation Arg1:T11 Arg2:T9	
+R8	Contaminant_correlation Arg1:T11 Arg2:T10	
+T24	Electrode_surface_area 8832 8879	The soil cell (15 cm \u00d7 2 cm \u00d7 3.5 cm)
+R9	Electrode_area Arg1:T16 Arg2:T24	
+T25	Treated_contaminant 10701 10705	lead
+T26	Concentration 10882 10891	150 mg/kg
+R10	Contaminant_concentration Arg1:T25 Arg2:T26	
+T27	Treated_contaminant 16992 17012	highest Pb2+ removal
+T28	pH 17050 17054	pH 6
+R11	Contaminant_pH Arg1:T27 Arg2:T28	
+T29	pH 17114 17118	pH 4
+R12	Contaminant_pH Arg1:T27 Arg2:T29	
+T30	pH 19573 19608	pH of 3.80 to around 1.26\u20131.70
+T31	pH 19671 19687	12.20\u201312.84
+T32	Treated_contaminant 20949 20957	lead ion
+T33	Removal_efficiency 21018 21029	40\u201360%
+R13	Contaminant_removal Arg1:T32 Arg2:T33	
+T34	Removal_efficiency 21048 21059	30\u201335%
+R14	Contaminant_removal Arg1:T32 Arg2:T34	
+T35	Concentration 22344 22364	0.1 M acetate buffer
+T36	pH 22368 22374	pH 3.8
+R15	Concentration_pH Arg1:T14 Arg2:T15	
+R16	Concentration_pH Arg1:T35 Arg2:T36	
+T37	Treated_contaminant 22816 22824	aluminum
+T38	Concentration 22912 22933	0.020\u20130.024 mg/g
+R17	Contaminant_concentration Arg1:T37 Arg2:T38	
+T39	Treated_contaminant 22950 22958	aluminum
+T40	Concentration 23106 23127	0.102\u20130.024 mg/g
+R18	Contaminant_concentration Arg1:T39 Arg2:T40	
+T41	Reactor_batch 23273 23313	batch experiment has also been performed
+T42	Treated_contaminant 23371 23379	aluminum
+T43	pH 23414 23468	acidic pH (i.e. about 20\u2013120 mg/L at pH 3\u20134)
+R19	Contaminant_pH Arg1:T42 Arg2:T43	
+T44	pH 23485 23495	base pH >7
+R20	Contaminant_pH Arg1:T42 Arg2:T44	
+T45	pH 23514 23519	pH >9
+R21	Contaminant_pH Arg1:T42 Arg2:T45	
+T46	Concentration 23545 23552	20 mg/L
+R22	Contaminant_concentration Arg1:T42 Arg2:T46	
+T47	Treated_contaminant 23568 23576	aluminum
+T48	pH 23608 23629	pH ranges of 5\u20139
+T49	Treated_contaminant 25066 25082	heavy metal ions
+T50	Treated_contaminant 25280 25288	aluminum
+R23	Contaminant_correlation Arg1:T49 Arg2:T50	
