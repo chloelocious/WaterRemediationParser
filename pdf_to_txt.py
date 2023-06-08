@@ -1,23 +1,20 @@
-import PyPDF2
 import os
 
-# path to the directory containing PDF files
-pdf_dir = '/home/ssarrouf/Documents/webscrape/to_date_papers/new_acs_2'
+rootDir = '/home/ssarrouf/Documents/train_data_3'
 
-# path to the directory to save the TXT files
-txt_dir = '/home/ssarrouf/Documents/webscrape/to_date_papers/acs_txt_files'
+for dirName, subdirList, fileList in os.walk(rootDir):
+    for fname in fileList:
+        # open the files in directory
+        with open(os.path.join(dirName, fname), 'r') as file:
+            file_content = file.read()
+            # replace multiple spaces with a single space
+            file_content = re.sub(' +', ' ', file_content)
+            # remove spaces between a lowercase and an uppercase letter
+            file_content = re.sub(r'([a-z]) ([A-Z])', r'\1\2', file_content)
+            # remove spaces between lowercase letters and between uppercase letters
+            file_content = re.sub(r'([a-z]) ([a-z])|([A-Z]) ([A-Z])', r'\1\2\3\4', file_content)
 
-for pdf_file in os.listdir(pdf_dir):
-    if pdf_file.endswith('.pdf'):
-        with open(os.path.join(pdf_dir, pdf_file), 'rb') as pdf:
-            try:
-                pdf_reader = PyPDF2.PdfReader(pdf)
-                pdf_content = ''
-                for page_num in range(len(pdf_reader.pages)):
-                    page = pdf_reader.pages[page_num]
-                    pdf_content += page.extract_text()
-                txt_file = os.path.splitext(pdf_file)[0] + '.txt'
-                with open(os.path.join(txt_dir, txt_file), 'w') as txt:
-                    txt.write(pdf_content)
-            except PyPDF2.errors.PdfReadError:
-                print(f"Error reading {pdf_file}: EOF marker not found")
+        # write the cleaned content back to the file
+        with open(os.path.join(dirName, fname), 'w') as file:
+            file.write(file_content)
+

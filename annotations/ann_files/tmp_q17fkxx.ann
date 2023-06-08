@@ -1,0 +1,108 @@
+T1	Applied_voltage 1637 1684	electric gradient of 1.25\u202fV\u202fcm\u22121
+T2	Concentration 1743 1797	35\u202fmg\u202fL\u22121 initial nitrate concentration
+T3	Flow_rate 1799 1833	flow rate of 2.3\u202fL min\u22121
+T4	pH 1835 1853	pH\u202f=\u202f6.8
+T5	Treated_pollutant 3939 4015	Nitrate ion is one of the most important pollutants in groundwater resources
+T6	Treated_pollutant 4141 4149	nitrogen
+T7	Treated_pollutant 4151 4158	nitrate
+T8	Treated_pollutant 4359 4366	nitrate
+T9	Treated_pollutant 4446 4453	nitrate
+T10	Treated_pollutant 4656 4663	nitrate
+T11	Treated_pollutant 4821 4828	nitrate
+T12	Treated_pollutant 6001 6022	mineral contaminants,
+T13	Treated_pollutant 6023 6044	Activated Carbon (AC)
+R1	Pollutant_correlation Arg1:T12 Arg2:T13	
+T14	Treated_contaminant 7290 7297	Cr (VI)
+T15	Anode 7362 7460	iron nanoparticles and silicate sand was inserted at the distance of 2 cm from the anode electrode
+T16	Treated_contaminant 7492 7499	Cr (VI)
+T17	Treated_contaminant 7520 7522	Cr
+T18	Removal_efficiency 7557 7560	88%
+T19	Removal_efficiency 7565 7568	19%
+R2	Contaminant_removal Arg1:T16 Arg2:T18	
+R3	Contaminant_removal Arg1:T17 Arg2:T19	
+T20	Applied_voltage 7791 7804	2 V cm\u22121
+T21	Removal_efficiency 7913 7954	contamination removal rate reached to 16%
+T22	Treated_contaminant 7989 8015	fluorine contaminated soil
+T23	Treated_contaminant 8304 8334	nitrate contaminated clay soil
+T24	Applied_voltage 8451 8488	potential gradient of 1.2 V cm\u22121
+T25	Treated_contaminant 8490 8497	nitrate
+T26	Removal_efficiency 8498 8523	removal efficiency of 90%
+R4	Contaminant_removal Arg1:T25 Arg2:T26	
+T27	Treated_contaminant 9376 9383	Cr (VI)
+T28	Removal_efficiency 9419 9449	regeneration efficiency of 95%
+T29	Applied_voltage 9451 9466	voltage of 33 V
+T30	Current 9471 9494	electric current of 3 A
+T31	Treated_contaminant 9939 9946	nitrate
+T32	Anode 11189 11197	graphite
+T33	Cathode 11198 11208	electrodes
+R5	Electrode Arg1:T32 Arg2:T33	
+T34	Treated_contaminant 11472 11498	nitrate contaminated water
+T35	Concentration 12177 12187	0.1 M HCl.
+T36	pH 12267 12286	pH (5.2, 6.8 and 8)
+T37	Concentration 12288 12357	initial nitrate concentration (80, 105, 135, 170 and 200 mg L\u22121)
+T38	Concentration 12885 12901	(50 mg L\u22121)
+T39	Treated_contaminant 13089 13096	nitrate
+T40	Porosity 14346 14374	average porosity of n = 0.39
+T41	Conductivity 14379 14440	hydraulic conductivity of K = 5.2 \u00d7 10\u22123 m s\u22121
+T42	Temperature 13936 13947	105 \u00b0C
+T43	Temperature 13471 13482	100 \u00b0C
+T45	Current 9021 9027	100 mA
+T46	Removal_efficiency 9196 9213	efficiency of 99%
+T44	Temperature 14679 14691	105 \u00b0C.
+T47	Concentration 13692 13712	0.1 mol L\u22121 HCl
+T48	Treated_contaminant 16197 16236	nitrate adsorption by activated carbon,
+T49	Concentration 16413 16428	135 mg L\u22121
+T50	Treated_contaminant 16429 16455	nitrate contaminated water
+R6	Contaminant_concentration Arg1:T50 Arg2:T49	
+T51	Flow_rate 16457 16491	The flow rate was 5.1 L min\u22121
+T52	Concentration 16626 16691	nitrate concentration exceeded the standard rate (50 mg L\u22121)
+T53	pH 18034 18089	the pH of extracted water of which ranges from 6.8 to 7
+T54	pH 18127 18149	pH = 6.8 as a basic pH
+T55	pH 18574 18582	pH = 6.8
+T56	Concentration 19033 19094	nitrate concentration is increased from 80 to 135 mg L\u22121
+T57	Concentration 19174 19224	when it is further increased up to 200 mg L\u22121
+T58	Concentration 19437 19483	concentration of nitrate up to 135 mg L\u22121
+T59	Concentration 19659 19716	the concentration of nitrate to more than 135 mg L\u22121
+T60	Concentration 19973 20020	with a nitrate concentration of 135 mg L\u22121
+T61	Concentration 20379 20424	135 mg L\u22121 initial nitrate concentration
+T62	Flow_rate 20426 20455	flow rate of 5.1 L min\u22121
+T63	pH 20457 20465	pH = 6.8
+T64	Flow_rate 22631 22754	to investigate the effect of the flow rate on the system performance, tests were carried out at a rate of 5.1 mL min\u22121
+T65	Flow_rate 22772 22793	and 2.3 mL min\u22121
+T66	Treated_contaminant 23526 23577	the process of nitrate removal in the PRB-EK system
+T67	Applied_voltage 23585 23624	applied voltages of 10, 20, 30 and 40 V
+T68	Removal_efficiency 23744 23793	nitrate removal efficiency has increased from 60%
+T70	Applied_voltage 23843 23867	applied voltage of 40 V.
+T69	Applied_voltage 23802 23825	applied voltage of 10 V
+T71	Removal_efficiency 23826 23834	u201376%
+R7	Voltage_removal_efficiency Arg1:T69 Arg2:T68	
+R8	Voltage_removal_efficiency Arg1:T70 Arg2:T71	
+T72	pH 24085 24139	effluent pH fluctuations were in the range of 6\u20138
+T73	Temperature 25486 25518	water temperature was 15 \u00b0C
+T74	Temperature 25599 25653	the temperature inside the PRB increased to 37 \u00b0C
+T75	Applied_voltage 25655 25685	at the applied voltage of 40 V
+T76	Reaction_time 26360 26402	This time was set at 67, 89, 111 and 125 h
+T77	Applied_voltage 26407 26460	applied voltages of 10, 20, 30 and 40 V, respectively
+T78	Applied_voltage 26594 26643	increasing the applied voltages to more than 30 V
+T79	Electrode_configuration 27089 27109	25 cm column of soil
+T80	Current 27132 27168	applying an electric current of 5 mA
+T81	Removal_efficiency 27170 27221	nitrate was discharged from about 80% of the column
+T82	Reaction_time 27111 27127	after about 24 h
+T83	Applied_voltage 27676 27712	applied potential difference of 10 V
+T84	Removal_efficiency 27779 27824	the adsorbent capacity increases by about 18%
+R9	Voltage_removal_efficiency Arg1:T83 Arg2:T84	
+T85	Removal_efficiency 27826 27845	It increases by 55%
+T86	Applied_voltage 27854 27890	applied potential difference of 20 V
+R10	Voltage_removal_efficiency Arg1:T86 Arg2:T85	
+T87	Removal_efficiency 27892 27895	90%
+T88	Applied_voltage 27904 27940	applied potential difference of 30 V
+R11	Voltage_removal_efficiency Arg1:T88 Arg2:T87	
+T89	Removal_efficiency 27945 27949	114%
+T90	Applied_voltage 27958 27995	applied potential difference of 40 V.
+R12	Voltage_removal_efficiency Arg1:T90 Arg2:T89	
+T91	Applied_voltage 28518 28548	a potential difference of 40 V
+T92	Reaction_time 28580 28591	after 120 h
+T93	Applied_voltage 31017 31057	the applied potential difference of 30 V
+T94	Removal_efficiency 31491 31510	with 90% efficiency
+T95	Treated_contaminant 31438 31461	carbon-adsorbed nitrate
+R13	Contaminant_removal Arg1:T95 Arg2:T94	

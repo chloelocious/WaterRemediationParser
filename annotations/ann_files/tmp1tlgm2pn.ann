@@ -1,0 +1,68 @@
+T1	Treated_pollutant 1258 1267	particles
+T2	Treated_pollutant 1269 1277	acid gas
+T3	Treated_pollutant 1279 1286	nitrous
+T4	Treated_pollutant 1291 1307	sulphuric oxides
+T5	Treated_pollutant 1309 1321	heavy metals
+T6	Treated_pollutant 1326 1344	hazardous organics
+T7	Treated_pollutant 1636 1658	leachable heavy metals
+T8	Treated_pollutant 1660 1696	high concentrations of soluble salts
+T9	Treated_pollutant 1701 1739	residual amounts of hazardous organics
+T10	Treated_pollutant 1741 1753	e.g. dioxins
+R1	Pollutant_correlation Arg1:T9 Arg2:T10	
+T11	Treated_pollutant 2957 2969	heavy metals
+T12	Treated_pollutant 6232 6236	zinc
+T13	Treated_pollutant 6241 6245	lead
+T14	Treated_pollutant 6291 6298	cadmium
+T15	Treated_pollutant 6303 6309	copper
+T16	Current 8122 8124	10
+T17	Current 8129 8134	50 mA
+T18	Concentration 8227 8229	3%
+T19	Concentration 8234 8237	22%
+T20	Electrode_configuration 10326 10633	Plexiglas cylinder divided transversely into five compartments (Fig. 1): one central compartment (III) in which the sample is introduced at the beginning of the experiment and two compartments on either side: a concentration compartment (II and IV) followed (outwards) by the electrode compartment (I and V)
+T21	Electrode_surface_area 10147 10290	Cells of type \u201cS\u201d, with a smaller internal diameter of 4 cm and cells type \u201cL\u201d which presented an internal diameter of 8 cm
+T22	Concentration 10799 10811	NaNO3 0.01M)
+T23	Anode 10635 10655	Two inert electrodes
+T24	Cathode 10668 10693	at either end of the cell
+R2	Electrode Arg1:T23 Arg2:T24	
+T25	pH 13308 13312	pH 2
+T26	pH 12834 12838	pH 2
+T27	pH 12855 12860	pH 12
+T28	pH 16404 16424	pH is still above 12
+T29	pH 16342 16358	with pH above 12
+T30	pH 16459 16471	kept below 2
+T31	Removal_efficiency 16663 16765	the remediation results were poor: between 2.4% and 5.2% of the metal present in the ash was extracted
+T32	pH 17524 17529	pH 12
+T33	Treated_contaminant 18728 18730	Cd
+T34	Removal_efficiency 18751 18754	10%
+R3	Contaminant_removal Arg1:T33 Arg2:T34	
+T35	Reactor_batch 18397 18448	batch extractions tests with Na-gluconate and water
+T36	Current 20730 20748	10 mA current (B1)
+T37	Current 20753 20771	50 mA current (B2)
+T38	Treated_contaminant 20838 20842	lead
+T39	Treated_contaminant 20847 20854	cadmium
+T40	Current 20882 20887	50 mA
+T41	Treated_contaminant 20889 20895	copper
+T42	Current 20925 20930	10 mA
+T43	Current_density 21313 21366	lower current density, between 0.123 and 0.615 mA/cm2
+T44	Current_density 21473 21483	0.8 mA/cm2
+T45	Removal_efficiency 22250 22285	more than 40% of all metals removed
+T46	Reaction_time 22300 22326	during the first five days
+R4	Removal_time Arg1:T45 Arg2:T46	
+T47	Reaction_time 22938 22944	5 days
+T48	Treated_pollutant 22950 22952	Zn
+T49	Treated_pollutant 22954 22956	Pb
+T50	Treated_pollutant 22961 22963	Cu
+T51	pH 23292 23360	The pH inside the compartment III oscillated between 12.03 and 12.32
+T52	Treated_pollutant 23506 23508	Pb
+T53	Removal_efficiency 23533 23538	30.7%
+R5	Pollutant_removal Arg1:T52 Arg2:T53	
+T54	Treated_pollutant 23676 23678	Pb
+T55	pH 23930 23942	pH around 12
+T56	Treated_pollutant 24272 24274	Pb
+T57	Treated_pollutant 24294 24306	other metals
+T58	Treated_pollutant 24396 24400	lead
+T59	Reaction_time 24446 24481	shorter remediation times (12 days)
+T60	Treated_pollutant 24665 24677	heavy metals
+T61	Reaction_time 24954 25005	too short remediation times (12 days instead of 20)
+T62	Treated_pollutant 25592 25594	Pb
+R6	Pollutant_correlation Arg1:T56 Arg2:T58	

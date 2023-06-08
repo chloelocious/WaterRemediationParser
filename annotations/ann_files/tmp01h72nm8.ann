@@ -1,0 +1,90 @@
+T1	Treated_contaminant 928 953	tetrachloroethylene (PCE)
+T2	Treated_contaminant 955 978	trichloroethylene (TCE)
+T3	Treated_contaminant 980 1000	carbon tetrachloride
+T4	Treated_contaminant 1005 1015	chloroform
+T5	Flow_rate 1269 1311	electro-osmotic (EO) flow rate (180 mL/day
+T6	pH 1314 1329	pH (around 6.0)
+T7	Current_density 1335 1374	current density (0.26\u20130.27 mA/cm2)
+T8	Removal_efficiency 1465 1506	removal efficiency ranging from 85 to 98%
+T9	Treated_contaminant 1640 1650	chloroform
+T10	Treated_contaminant 1653 1673	carbon tetrachloride
+T11	Treated_contaminant 1676 1679	TCE
+T12	Treated_contaminant 1682 1685	PCE
+T13	Treated_contaminant 4025 4037	heavy metals
+T14	Treated_contaminant 4110 4117	toluene
+T15	Treated_contaminant 4101 4108	benzene
+T16	Treated_contaminant 4119 4127	ethylene
+T17	Treated_contaminant 4129 4142	xylene (BETX)
+T18	Treated_contaminant 4147 4170	trichloroethylene (TCE)
+R1	Contaminant_correlation Arg1:T13 Arg2:T15	
+R2	Contaminant_correlation Arg1:T13 Arg2:T14	
+R3	Contaminant_correlation Arg1:T13 Arg2:T16	
+R4	Contaminant_correlation Arg1:T13 Arg2:T17	
+R5	Contaminant_correlation Arg1:T13 Arg2:T18	
+T19	Treated_contaminant 7378 7403	tetrachloroethylene (PCE)
+T20	Treated_contaminant 7405 7422	trichloroethylene
+T21	Treated_contaminant 7424 7444	carbon tetrachloride
+T22	Treated_contaminant 7449 7459	chloroform
+T23	Treated_contaminant 8637 8639	Ci
+T24	Conductivity 11562 11617	low hydraulic conductivity (2.5 \u00d7 10\u22128\ncm/s)
+T25	Treated_contaminant 11822 11825	PCE
+T26	Treated_contaminant 11827 11830	TCE
+T27	Treated_contaminant 11832 11842	chloroform
+T28	Treated_contaminant 11847 11867	carbon tetrachloride
+T29	Temperature 12220 12231	105 \u00b0C
+T30	Applied_voltage 12158 12182	constant voltage of 12 V
+T31	Reaction_time 12236 12240	24 h
+T32	Concentration 12258 12288	0.01 M sodium acetate solution
+T33	Electrode_configuration 12437 12547	central unit of the EK reactor (length 10 cm, diameter 10 cm) with a membrane placed on each side of this unit
+T34	Concentration 13227 13295	Both catholyte and anolyte solutions contained 0.01 M sodium acetate
+T35	Concentration 13774 13798	2 mL 0.1 M sulfuric acid
+T36	Anode 14776 14822	2H2O \u2212 4e\u2212\n\u2192 O2\n+ 4H+ (anode)
+T37	Cathode 14860 14909	2H2O + 2e\u2212\n\u2192 H2\n+ 2OH\u2212 (cathode)
+T38	Anode 14674 14683	oxidation
+T39	Cathode 14688 14697	reduction
+R6	Anode_oxidation Arg1:T38 Arg2:T36	
+R7	Cathode_reduction Arg1:T39 Arg2:T37	
+T40	pH 14964 14986	pH may drop to below 2
+T41	Treated_contaminant 15308 15318	metal ions
+T42	Treated_contaminant 15327 15334	Al(III)
+R8	Contaminant_correlation Arg1:T41 Arg2:T42	
+T43	pH 15767 15787	pH stabilizes at 5.9
+T44	Current_density 15796 15847	current density stabilizes at 0.26\u20130.27 mA/cm2
+T45	Flow_rate 17137 17174	stable EO flow rate of ca. 180 mL/day
+T46	Treated_contaminant 17417 17427	chloroform
+T47	Removal_efficiency 17435 17449	removed at 98%
+R9	Contaminant_removal Arg1:T46 Arg2:T47	
+T48	Treated_contaminant 17483 17486	TCE
+T49	Treated_contaminant 17491 17511	carbon tetrachloride
+T50	Removal_efficiency 17563 17565	85
+T51	Removal_efficiency 17570 17573	95%
+R10	Contaminant_removal Arg1:T48 Arg2:T50	
+R11	Contaminant_removal Arg1:T49 Arg2:T51	
+T52	Treated_contaminant 17589 17611	PCE contaminated soils
+T53	Removal_efficiency 17633 17636	90%
+R12	Contaminant_removal Arg1:T52 Arg2:T53	
+T54	Flow_rate 19458 19462	0.05
+T55	Flow_rate 19464 19467	0.1
+T56	Flow_rate 19469 19473	0.18
+T57	Flow_rate 19479 19488	0.19 cm/h
+T58	Treated_contaminant 19862 19865	PCE
+T59	Treated_contaminant 19867 19870	TCE
+T60	Treated_contaminant 19872 19892	carbon tetrachloride
+T61	Treated_contaminant 19898 19908	chloroform
+T62	Treated_contaminant 23511 23540	chlorinated organic compounds
+T63	Treated_contaminant 23549 23552	PCE
+T64	Treated_contaminant 23554 23557	TCE
+T65	Treated_contaminant 23559 23579	carbon tetrachloride
+R13	Contaminant_correlation Arg1:T62 Arg2:T63	
+R14	Contaminant_correlation Arg1:T62 Arg2:T64	
+R15	Contaminant_correlation Arg1:T62 Arg2:T65	
+T66	Treated_contaminant 23585 23595	chloroform
+R16	Contaminant_correlation Arg1:T62 Arg2:T66	
+T67	Removal_efficiency 23628 23661	efficiency ranging from 85 to 98%
+T68	pH 15024 15026	12
+T69	Flow_rate 16798 16808	1.2 cm/day
+T70	Applied_voltage 16490 16498	1.2 V/cm
+T71	Reaction_time 19435 19436	1
+T72	Reaction_time 19438 19439	3
+T73	Reaction_time 19441 19442	5
+T74	Reaction_time 19448 19449	7
